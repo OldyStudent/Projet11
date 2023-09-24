@@ -1,0 +1,129 @@
+.Details {
+    padding-inline: 100px;
+    margin-block: 30px 60px;
+}
+
+.Details__informations {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.Details__informations__title {
+    font-size: var(--font-size-larger);
+    font-weight: 500;
+}
+
+.Details__informations__location {
+    font-size: var(--font-size-medium);
+}
+
+.Details__informations__tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.Details__informations__tag {
+    background: var(--color-coral-red);
+    color: white;
+    font-size: var(--font-size-small);
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.Details__informations__host {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+
+.Details__informations__host img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Details__informations__rating {
+    text-align: right;
+}
+
+.Details__dropdowns {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px
+}
+
+.Details__dropdowns .DropDown {
+    flex: 1;
+}
+
+
+
+@media screen and (max-width: 786px){
+
+    .Details {
+        padding-inline: 20px;
+    }
+
+    .Details__informations {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Details__informations__title-location {
+        grid-column: 1 / 3;
+    }
+
+    .Details__informations__tags {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .Details__informations__rating {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .Details__informations__title {
+        font-size: var(--font-size-medium);
+
+    }
+
+    .Details__informations__location {
+        font-size: var(--font-size-small);
+    }
+
+    .Details__informations__tag {
+        font-size: var(--font-size-smaller);
+        padding: 4px 15px;
+    }
+
+    .Details__informations__host {
+        font-size: var(--font-size-small);
+    }
+
+    .Details__informations__host img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .Details__informations__rating {
+        text-align: left;
+    }
+
+    .Details__informations__rating img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .Details__dropdowns {
+        flex-direction: column;
+        gap: 20px
+    }
+
+}

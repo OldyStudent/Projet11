@@ -1,0 +1,54 @@
+.Home {
+    padding-inline: 100px;
+    margin-block: 62px;
+}
+
+.Home__catch-phrase {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../assets/images/montagna-verde.png") center / cover;
+    color: white;
+    font-size: clamp(var(--font-size-large), 4vw, var(--font-size-largest));
+    padding: clamp(36px, 5vw, 78px);
+    margin-bottom: 42px;
+    border-radius: 25px;
+}
+
+.Home__catch-phrase span {
+    display: inline;
+}
+
+.Home__gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    justify-items: center;
+    gap: 50px;
+    background: var(--color-snow-white);
+    padding: 50px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 786px){
+
+    .Home {
+        padding-inline: 20px;
+    }
+
+    .Home__catch-phrase {
+        text-align: left;
+        font-size: var(--font-size-large);
+        padding: 32px 16px;
+        border-radius: 10px;
+    }
+
+    .Home__catch-phrase span {
+        display: block;
+    }
+
+    .Home__gallery {
+        background: transparent;
+        padding: 0;
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+    }
+}

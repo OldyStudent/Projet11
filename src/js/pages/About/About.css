@@ -1,0 +1,35 @@
+.About {
+    padding-inline: 100px;
+    margin-block: 62px;
+}
+
+.About__catch-phrase {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../../assets/images/kalen-emsley.png") center / cover;
+    margin-bottom: 42px;
+    border-radius: 25px;
+    height: 223px;
+}
+
+.About__details {
+    padding-inline: 100px;
+}
+
+.About__details .DropDown {
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 786px) {
+
+    .About {
+        padding-inline: 20px;
+    }
+
+    .About__details {
+        padding-inline: 0;
+    }
+
+    .About__details .DropDown {
+        margin-bottom: 20px;
+    }
+}

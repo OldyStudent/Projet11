@@ -1,0 +1,7 @@
+#root {
+    --margin-top: 40px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: calc(100vh - var(--margin-top));
+    margin-top: var(--margin-top);
+}

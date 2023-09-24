@@ -1,0 +1,30 @@
+.Error404 {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding-inline: 100px;
+    height: 100%;
+}
+
+.Error404__title {
+    font-size: 288px;
+    font-weight: bold;
+}
+
+.Error404__home-link {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 786px){
+    main {
+        padding-inline: 20px;
+    }
+
+    .Error404__title {
+        font-size: 96px;
+    }
+
+    .Error404__home-link {
+        font-size: var(--font-size-small);
+    }
+}

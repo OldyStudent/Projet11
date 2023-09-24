@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-large);
+    font-weight: 500;
+    padding-inline: 100px;
+}
+
+header img {
+    height: 68px;
+}
+
+nav ul {
+    display: flex;
+    column-gap: 56px;
+}
+
+.active {
+    border-bottom: 2px solid var(--color-coral-red);
+}
+
+
+@media screen and (max-width: 786px){
+
+    header {
+        font-size: var(--font-size-smaller);
+        padding-inline: 20px;
+    }
+
+    header img {
+        height: 47px;
+    }
+
+    nav ul {
+        column-gap: 10px;
+    }
+}

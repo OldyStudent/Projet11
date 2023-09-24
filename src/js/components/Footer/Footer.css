@@ -1,0 +1,23 @@
+footer {
+    background: black;
+    color: white;
+    display: grid;
+    place-items: center;
+    padding-block: 66px 30px;
+    height: 210px;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+footer p {
+    font-size: var(--font-size-large);
+}
+
+@media screen and (max-width: 786px){
+    footer p {
+        font-size: var(--font-size-small);
+    }
+}

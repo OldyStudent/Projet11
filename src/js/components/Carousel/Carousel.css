@@ -1,0 +1,54 @@
+.Carousel {
+    height: 415px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.Carousel__controller {
+    position: absolute;
+    right: 0;
+    top: calc(50% - 40px);
+    height: 80px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.Carousel__controller--left {
+    transform: rotate(180deg);
+    left: 0;
+}
+
+.Carousel__current-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Carousel__current-image-index {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 16px);
+}
+
+
+@media screen and (max-width: 786px) {
+    .Carousel {
+        height: 225px;
+        border-radius: 10px;
+    }
+
+    .Carousel__controller {
+        top: calc(50% - 20px);
+        height: 40px;
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    .Carousel__current-image-index {
+        font-size: var(--font-size-small);
+        left: calc(50% - 6px);
+        bottom: 10px;
+    }
+}
